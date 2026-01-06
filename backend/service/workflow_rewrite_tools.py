@@ -62,7 +62,7 @@ def get_workflow_data_ui_from_config(config: Dict[str, Any]) -> Optional[Dict[st
     return None
 
 @function_tool
-def get_current_workflow() -> str:
+def get_current_workflow(dummy_arg: str = "") -> str:
     """获取当前session的工作流数据"""
     session_id = get_session_id()
     if not session_id:
